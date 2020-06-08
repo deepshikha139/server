@@ -1,0 +1,26 @@
+Add proxy for signin with google
+
+Import redux, react-redux, react-router-dom,
+delete all except serviceWorker and setUpProxy
+make a new index.js
+Add root key for dom
+Add index.js and app.js
+Add reducer with default switch case
+Add reducer in index.js
+
+Add Header on top
+Add materialize-css
+import materialize-css in index.js
+Add action folder
+Add 1st get current_user api
+Add types file but didn't add anything in it
+Add proxy for that api in setUpProxy file
+
+create fetchUser action with axios
+Add Actions in didMount method of APP.js so that fetch call in first time
+connect app.js with actions by connect function(no mapStateToProps)
+add types
+Add type case in reducers
+Check by applying console
+Add Reducer with Header to gt user login status 
+
