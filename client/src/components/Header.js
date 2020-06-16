@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 class Header extends Component {
   renderContent() {
-    switch (this.props.auth) {
+    switch (this.props.authReducer) {
       case null:
         return;
       case false:
@@ -28,9 +28,7 @@ class Header extends Component {
         <div className="nav-wrapper">
           <a className="left brand-logo">Emaily</a>
           <ul className="right">
-            <li>
-              <a>{this.renderContent()}</a>
-            </li>
+            <a>{this.renderContent()}</a>
           </ul>
         </div>
       </nav>
@@ -38,8 +36,8 @@ class Header extends Component {
   }
 }
 
-const mapStateToProps = ({ auth }) => {
-  return { auth };
+const mapStateToProps = ({ authReducer }) => {
+  return { authReducer };
 };
 
 export default connect(mapStateToProps)(Header);

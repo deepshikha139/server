@@ -22,5 +22,9 @@ connect app.js with actions by connect function(no mapStateToProps)
 add types
 Add type case in reducers
 Check by applying console
-Add Reducer with Header to gt user login status 
+Add Reducer with Header to get user login status
+
+handle action for login and logout
+in node add redirect method(redirect back to a page after completion of a task)
+add react-router's Link tag instead of a tag
 
